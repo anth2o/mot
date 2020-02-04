@@ -23,7 +23,7 @@ FPS = 4
 RESOLUTION = (1024, 768)
 CLASS_NAMES = ["bottles", "others", "fragments"]
 CLASS_TO_THRESHOLD = {"bottles": 0.4, "others": 0.3, "fragments": 0.3}
-CPU_COUNT = min(multiprocessing.cpu_count(), 32)
+CPU_COUNT = min(multiprocessing.cpu_count() / 2, 32)
 
 
 def handle_post_request(upload_folder=UPLOAD_FOLDER,
